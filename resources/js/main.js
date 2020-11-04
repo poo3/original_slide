@@ -27,7 +27,7 @@ function changeImage1(){
 
   let opacityInt = image1.style.opacity * 100;
   //フェードアウトの処理（opacityを100ミリ秒ごとに0.1づつ減らす）
-  let intervalId1 = setInterval( () => {
+  let intervalId1 = setInterval( function() {
     opacityInt = opacityInt - 10;
     image1.style.opacity = opacityInt / 100;
 
@@ -41,7 +41,7 @@ function changeImage1(){
 
       opacityInt = image1.style.opacity * 100;
       //フェードインの処理（opacityを100ミリ秒ごとに0.1づつ増やす）
-      intervalId1 = setInterval( () => {
+      intervalId1 = setInterval( function() {
         opacityInt = opacityInt + 10;
         image1.style.opacity = opacityInt / 100;
         if(image1.style.opacity >= 1){
@@ -66,7 +66,7 @@ function changeImage2(){
 
   let opacityInt = image2.style.opacity * 100;
   //フェードアウトの処理（opacityを100ミリ秒ごとに0.1づつ減らす）
-  let intervalId2 = setInterval( () => {
+  let intervalId2 = setInterval( function() {
     opacityInt = opacityInt - 10;
     image2.style.opacity = opacityInt / 100;
 
@@ -79,7 +79,7 @@ function changeImage2(){
 
       opacityInt = image2.style.opacity * 100;
       //フェードインの処理（opacityを100ミリ秒ごとに0.1づつ増やす）
-      intervalId2 = setInterval( () => {
+      intervalId2 = setInterval( function() {
         opacityInt = opacityInt + 10;
         image2.style.opacity = opacityInt / 100;
         if(image2.style.opacity >= 1){
@@ -104,7 +104,7 @@ function changeImage3(){
 
   let opacityInt = image3.style.opacity * 100;
   //フェードアウトの処理（opacityを100ミリ秒ごとに0.1づつ減らす）
-  let intervalId3 = setInterval( () => {
+  let intervalId3 = setInterval( function() {
     opacityInt = opacityInt - 10;
     image3.style.opacity = opacityInt / 100;
 
@@ -117,7 +117,7 @@ function changeImage3(){
 
       opacityInt = image3.style.opacity * 100;
       //フェードインの処理（opacityを100ミリ秒ごとに0.1づつ増やす）
-      intervalId3 = setInterval( () => {
+      intervalId3 = setInterval( function() {
         opacityInt = opacityInt + 10;
         image3.style.opacity = opacityInt / 100;
         if(image3.style.opacity >= 1){
