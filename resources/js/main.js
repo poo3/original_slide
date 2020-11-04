@@ -1,5 +1,5 @@
 // スタート前日を決める
-var from = new Date("2020/11/2");
+var from = new Date("2020/11/1");
 var to = new Date();
 
 // 経過時間をミリ秒で取得
@@ -7,10 +7,7 @@ var ms = to.getTime() - from.getTime();
 // ミリ秒を日付に変換(端数切捨て)
 var days = Math.floor(ms / (1000*60*60*24));
 
-console.log(days); 
 changeMainImage(days);
-
-
 // 経過日数似合わせてmainimgのsourceを変更
 function changeMainImage(days) {
   document.mainimg.src = "./resources/img/sample_main_images_"+days+".png";
@@ -19,8 +16,9 @@ function changeMainImage(days) {
 // ランダムで画像を入れ替える記述(1枚目)
 let intervalId1;
 let image1 = document.getElementById('first-sub-img');
+// 5000ms(ミリ秒)＝5秒でランダム画像変更関数呼び出し
 setInterval(changeImage1, 5000);
-
+// ランダム画像変更関数
 function changeImage1(){
 
   if(image1.style.opacity == ''){
@@ -35,16 +33,7 @@ function changeImage1(){
 
     if(image1.style.opacity <= 0){
       clearInterval(intervalId1);
-      //画像を交換(ifの中は絶対パスを入れて識別)
-      // if(image.src == 'file:///E:/CR%20work/150_anniversary/resources/img/sample_main_images_1.png'){
-      //   image.src = "./resources/img/sample_main_images_2.png";
-      //   console.log('trueじっこうするで');
-      // }else{
-      //   console.log('else実行するで');
-      //   console.log(image.src);
-      //   image.src = "./resources/img/sample_main_images_1.png";
-      // }
-      // ランダムで画像を切り替え
+
       var min = 1 ;
       var max = 10 ;
       var a = Math.floor( Math.random() * (max + 1 - min) ) + min ;
@@ -83,16 +72,6 @@ function changeImage2(){
 
     if(image2.style.opacity <= 0){
       clearInterval(intervalId2);
-      //画像を交換(ifの中は絶対パスを入れて識別)
-      // if(image.src == 'file:///E:/CR%20work/150_anniversary/resources/img/sample_main_images_1.png'){
-      //   image.src = "./resources/img/sample_main_images_2.png";
-      //   console.log('trueじっこうするで');
-      // }else{
-      //   console.log('else実行するで');
-      //   console.log(image.src);
-      //   image.src = "./resources/img/sample_main_images_1.png";
-      // }
-      // ランダムで画像を切り替え
       var min = 1 ;
       var max = 10 ;
       var a = Math.floor( Math.random() * (max + 1 - min) ) + min ;
@@ -131,16 +110,6 @@ function changeImage3(){
 
     if(image3.style.opacity <= 0){
       clearInterval(intervalId3);
-      //画像を交換(ifの中は絶対パスを入れて識別)
-      // if(image.src == 'file:///E:/CR%20work/150_anniversary/resources/img/sample_main_images_1.png'){
-      //   image.src = "./resources/img/sample_main_images_2.png";
-      //   console.log('trueじっこうするで');
-      // }else{
-      //   console.log('else実行するで');
-      //   console.log(image.src);
-      //   image.src = "./resources/img/sample_main_images_1.png";
-      // }
-      // ランダムで画像を切り替え
       var min = 1 ;
       var max = 10 ;
       var a = Math.floor( Math.random() * (max + 1 - min) ) + min ;
