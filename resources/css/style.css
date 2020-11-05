@@ -105,19 +105,20 @@ body {
 }
 
 .slider-wrapper{
-  --base-width: 800px;
+  width:800px;
+  margin: 0 auto;
 }
 
 .main-slide {
   margin: 0 auto;
-  width: var(--base-width);
+  width: 100%;
   height: auto;
   box-sizing: border-box;
   font-size:0;
 }
 
 .sub-slider-wrapper {
-  width: var(--base-width);
+  width: 100%;
   margin: 0 auto ;
   display: flex;
 }
